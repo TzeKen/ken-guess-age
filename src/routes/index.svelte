@@ -12,8 +12,11 @@
     }
 </script>
 
+<h1>Guess Age</h1>
 <form on:submit|preventDefault={getAge}>
     <label for="name">Name:</label>
     <input id="user_name" bind:value={user_name} type="text" />
     <button type="submit">Check</button>
 </form>
+
+<p>{age}</p>
